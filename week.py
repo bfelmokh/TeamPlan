@@ -17,17 +17,15 @@ class week:
             if (self.initw[i].isABS()) and (i not in (1,2,3)):
                 #print(self.initw[i]," est absent, on doit le permuter")
                 if i == 0 :
-                    print("Soir",self.initw[i].isDPM())
+                    print(self.initw[i]," est en Soir et en DPM? ",self.initw[i].isDPM())
                 elif i == 4 :
-                    print("Early",self.initw[i].isDPM())
+                    print(self.initw[i]," est en Early et en DPM? ",self.initw[i].isDPM())
                 elif i == 5 :
-                    print("Early",self.initw[i].isDPM())
+                    print(self.initw[i]," est en Early et en DPM? ",self.initw[i].isDPM())
                 elif i == 6 :
-                    print("Late",self.initw[i].isDPM())
+                    print(self.initw[i]," est en Late et en DPM? ",self.initw[i].isDPM())
                 elif i == 7 :
-                    print("Late",self.initw[i].isDPM())
+                    print(self.initw[i]," est en Late et en DPM? ",self.initw[i].isDPM())
                 elif i == 8 :
-                    print("Soir",self.initw[i].isDPM())
-                elif i == 9 :
-                    print("Weekend")                    
+                    print(self.initw[i]," est en WEEKEND et en DPM? ",self.initw[i].isDPM())                   
                 
