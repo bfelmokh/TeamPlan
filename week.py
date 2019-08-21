@@ -10,22 +10,24 @@ class week:
     def __str__(self):
         #for i in range (len(self.initw)):
         #    print(self.initw[i])
-        print(','.join(map(str, self.initw)))
-        # return res
-    def checkABS(self):
+        #print(','.join(map(str, self.initw)))
+        return (','.join(map(str, self.initw)))
+    def checkABS(self,nw):
         for i in range(len(self.initw)):
+            self.initw[i].reload(nw)
             if (self.initw[i].isABS()) and (i not in (1,2,3)):
                 #print(self.initw[i]," est absent, on doit le permuter")
                 if i == 0 :
-                    print(self.initw[i]," est en Soir et en DPM? ",self.initw[i].isDPM())
+                    print(self.initw[i],"= Soir , DPM = ",self.initw[i].isDPM())
                 elif i == 4 :
-                    print(self.initw[i]," est en Early et en DPM? ",self.initw[i].isDPM())
+                    print(self.initw[i],"= Early , DPM = ",self.initw[i].isDPM())
                 elif i == 5 :
-                    print(self.initw[i]," est en Early et en DPM? ",self.initw[i].isDPM())
+                    print(self.initw[i],"= Early , DPM = ",self.initw[i].isDPM())
                 elif i == 6 :
-                    print(self.initw[i]," est en Late et en DPM? ",self.initw[i].isDPM())
+                    print(self.initw[i],"= Late , DPM = ",self.initw[i].isDPM())
                 elif i == 7 :
-                    print(self.initw[i]," est en Late et en DPM? ",self.initw[i].isDPM())
+                    print(self.initw[i],"= Late , DPM = ",self.initw[i].isDPM())
                 elif i == 8 :
-                    print(self.initw[i]," est en WEEKEND et en DPM? ",self.initw[i].isDPM())                   
-                
+                    print(self.initw[i],"= WEEKEND , DPM = ",self.initw[i].isDPM())                   
+        print ('Génération nouveau planning suite à l\'absence ...')
+        print ('Rien à faire, décision non prise en compte\n -----------')
